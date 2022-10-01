@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/*---------- navbar starts here --------- */
+.navbar {
+  z-index: 1;
+  position: fixed;
+}
+.navbar i {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 3rem;
+  margin: 2px;
+  border-radius: 1rem;
+  padding: 0.6rem 1rem;
+  color: rgb(254, 254, 254);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 0.5rem rgb(212, 29, 215);
+}
+.navbar i:active {
+  color: rgb(0, 0, 0);
+}
+.navbar ul {
+  list-style: none;
+  transition: all 0.4s;
+  display: inline-block;
+  width: 250px;
+}
+.navbar ul li {
+  transition: all 0.4s;
+  background-color: rgb(46, 45, 45);
+  padding: 2rem 3rem;
+}
+.navbar ul li a {
+  transition: all 0.4s;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.navbar ul li:hover {
+  background-color: rgb(0, 0, 0);
+}
+.navbar ul li a:hover {
+  padding: 1rem;
+  color: rgb(234, 174, 47);
+}
+
+/* -----------navbar ends here--------- */
+
+/* -----------home starts here----------- */
+
+.home {
+  position: relative;
+  height: 1000px;
+  width: 100%;
+}
+.home::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("image/123.jpg") no-repeat center center/cover;
+  z-index: -1;
+  content: "";
+  opacity: 1;
+  height: 1000px;
+  width: 100%;
+}
+.home h1 {
+  padding: 0 5px;
+  z-index: -1;
+  font-size: 3rem;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-shadow: 2px 2px 2px rgb(221, 0, 255);
+  position: relative;
+  top: 10rem;
+}
+.home p {
+  padding: 0 5px;
+  z-index: -1;
+  max-width: 700px;
+  margin: 0 auto;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: 11rem;
+}
+.i {
+  z-index: -1;
+  color: rgb(34, 8, 46);
+  top: 5rem;
+  position: relative;
+  font-size: 4rem;
+  text-shadow: 2px 2px 1rem rgb(255, 255, 255);
+  display: block;
+  width: 6%;
+  margin: 0 auto;
+  animation-name: js;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes js {
+  0% {
+    text-shadow: 1px 1px 1rem rgb(0, 255, 179);
+  }
+  33% {
+    text-shadow: 1px 1px 1rem rgb(255, 255, 255);
+  }
+
+  67% {
+    text-shadow: 1px 1px 1rem rgb(102, 255, 0);
+  }
+
+  100% {
+    text-shadow: 1px 1px 1rem rgb(36, 240, 255);
+  }
+}
+
+/*---------- home ends here --------- */
+
+/*---------- Gif starts here --------- */
+
+#gif img {
+  z-index: -1;
+  animation: forward 3s linear infinite;
+}
+@keyframes forward {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(1300px);
+  }
+}
+#gif img:hover {
+  cursor: pointer;
+}
+
+/*---------- Gif ends here --------- */
+
+/*------------- section1 starts here --------- */
+
+#sec1 {
+  height: 100%;
+  background-color: rgb(28, 28, 45);
+}
+.mainbox {
+  display: flex;
+}
+.box {
+  padding: 5rem 0 3rem 0;
+  display: flex;
+  margin: 0 auto;
+}
+.row {
+  transition: all 0.3s;
+  background-color: rgb(49, 51, 67);
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 2rem;
+  height: 100%;
+  cursor: pointer;
+  max-width: 250px;
+  color: white;
+}
+.row:hover {
+  transform: translateY(-1rem);
+}
+.row img {
+  max-width: 250px;
+}
+.row h2 {
+  padding: 1rem 0;
+}
+.row h2:hover {
+  color: aqua;
+}
+.btn {
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: aqua;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid aqua;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(0, 255, 234);
+  color: white;
+}
+
+/*------------- section1 ends here --------- */
+
+/*---------- about section starts here --------*/
+
+#about {
+  padding: 0 60px;
+  height: 100%;
+  background-color: rgb(53, 17, 86);
+}
+.sec {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+}
+.sec h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 1px rgb(255, 0, 0);
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  padding: 10px;
+  font-variant: small-caps;
+}
+.box1 {
+  flex-basis: 35%;
+}
+.box1 h1 {
+  padding: 5px 10px;
+}
+.box2 {
+  flex-basis: 30%;
+}
+.box2 li {
+  list-style: none;
+}
+.box2 li a {
+  color: white;
+  text-decoration: none;
+}
+.box3 {
+  flex-basis: 35%;
+}
+.abox {
+  display: block;
+  border: 2px solid rgb(252, 248, 248);
+  box-shadow: 2px 2px 2rem rgb(249, 253, 255);
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  padding: 30px 2px;
+  background-color: rgb(0, 0, 0);
+  margin: 50px 20px;
+  animation-name: js3;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes js3 {
+  0% {
+    box-shadow: 1px 1px 1rem rgb(0, 255, 179);
+  }
+  33% {
+    box-shadow: 1px 1px 1rem rgb(255, 255, 255);
+  }
+
+  67% {
+    box-shadow: 1px 1px 1rem rgb(102, 255, 0);
+  }
+
+  100% {
+    box-shadow: 1px 1px 1rem rgb(36, 240, 255);
+  }
+}
+
+.fa-solid {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  padding: 2px 9px;
+}
+.abox .fa-brands {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px red;
+}
+/*------------- about ends here --------- */
+
+/*------------- Blog starts here --------- */
+
+#blog{
+  height: 100%;
+  background-color: rgb(116, 116, 116);
+  color: rgb(255, 254, 254);
+  padding: 10px 50px;
+}
+#blog img{
+  box-shadow: 2px 2px 20px rgb(121, 4, 255);
+  border-radius: 50%;
+  border: 1px solid rgb(191, 0, 255);
+  height: 200px;
+  margin: 10px 30px 10px 60px;
+  width: 200px;
+}
+#blog h1{
+  text-align: center;
+  color: rgb(255, 252, 252);
+  text-shadow: 3px 3px 20px white;
+  font-size: 2.5rem;
+  margin: 2.5rem 0;
+  padding-bottom: 2.5rem;
+  border-bottom: 5px solid rgb(0, 0, 0);
+
+}
+.sec-0{
+  padding: 20px 0 30px 0;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  width: 85%;
+  margin: 30px auto;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 2px 2px 20px white;
+  display: flex;
+}
+.sec-0 p{
+  width: 70%;
+}
+.sec-0 h2{
+  padding-bottom: 10px;
+}
+.sec-0 h3{
+  padding-top: 8px;
+}
+.content{
+  padding-top: 50px;
+}
+
+
+
+
+
+
+/*------------- Blog ends here --------- */
+
+
+/*------------- footer starts here --------- */
+.footer {
+  height: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/*------------- footer ends here --------- */
